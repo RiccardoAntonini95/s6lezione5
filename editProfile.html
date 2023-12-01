@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Netflix film tv-series">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>Netflix - Edit Profile</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="homepage.html">
+                <img src="assets/img/netflix_logo.png" alt="netflix-logo" width="85">
+            </a>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="container text-center" id="edit-container">
+            <div class="row border-bottom border-secondary">
+                <div class="col text-start">
+                <h1 class="display-3 fw-500">Edit Profile</h1>
+                </div>
+            </div>
+            <div class="row g-2 py-2">
+                <div class="col-3 position-relative pb-2">
+                    <img src="assets/img/kids_icon.png" class="img-fluid" alt="kids-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen-fill position-absolute border border-white bg-black" viewBox="0 0 16 16">
+                        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001"/>
+                    </svg>
+                </div>
+                <div class="col-9 d-flex flex-wrap align-content-between border-bottom border-secondary pb-2">
+                        <input type="text" class="bg-secondary" id="profile-input" value="Strive Student" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                        <form action="/action_page.php">
+                            <label for="language">Language:</label><br>
+                            <select name="language" id="language">
+                                <option value="English">English</option>
+                                <option value="Italian">Italian</option>
+                                <option value="Spanish">Spanish</option>
+                                <option value="Korean">Korean</option>
+                            </select>
+                        </form>
+                </div>
+            </div>
+            <div class="row g-2 py-2">
+                <div class="col-3 pb-2"></div>
+                <div class="col-9 text-start border-bottom border-secondary pb-2">
+                    <form>
+                        <label for="maturity-settings">Maturity Settings:</label><br>
+                        <input type="text" id="maturity-input" class="bg-dark text-white" value="ALL MATURITY RATINGS" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                        <h4>Show titles of <span class="fw-bold">all maturity ratings</span> for this profile.</h4>
+                        <button class="btn">Edit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row g-2 py-2">
+                <div class="col-3 pb-2"></div>
+                <div class="col-9 text-start pb-2">
+                    <p>Autoplay Controls</p>
+                    <input type="checkbox" id="autoplay1" name="autoplay1" value="autoplay1">
+                    <label for="vehicle1"> Autoplay next episode in a series on all devices.</label><br>
+                    <input type="checkbox" id="autoplay2" name="autoplay2" value="autoplay2">
+                    <label for="vehicle2"> Autoplay previews while browsing on all devices.</label><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex justify-content-between pt-2 border-top border-secondary">
+                    <button>SAVE</button>
+                    <button>CANCEL</button>
+                    <button>DELETE PROFILE</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
